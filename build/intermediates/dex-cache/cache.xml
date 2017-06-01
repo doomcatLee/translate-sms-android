@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Shared/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_83323e2b2d58746702b89e8cacf439fe74d50414/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/e722ad2f76b123a3c0f24400632035ffce75ef94/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1153581ef851e6eb3daec240397b0d55f9299f02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_56ea8db709895abfcac7526170d7aeb67da5d0e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/0ef64fe879b5e4d579d69951ef40f9b6a035a222/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e51679cacaa9898c657cc3ff14709c1688431fcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/e5a6e06da91154a8bd387623f27fdd72608331e1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aaff641f59d87337e293b53f17acc78730eb92d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/bdfca23708ff1d02ffcce1c66b0e2646049e44e0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_878a26b7df7fa81962c56f28a498934513d6769a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/1084830c5ba60aa014aa3a30fb8f30b5527bb9bd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3e7880a396d2293a9a8ed7db45d8e20b2c022141/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_de40bc53145cab4e57895434e9f8a423cb5d6dbf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/9d2dd82f2bea7994e4ab741e4faf8cf192b9f7df/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e552dbd301a60d5f84ea3ddd6ca0b8270cbbf5f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/0decbb3aadc999d06f6136d4563b2c4fd69a305e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c931442839414680c3572e5fb790839677ef1ee3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/e7c93b4d72989d7d637fd5b2cf209e8e81fcd05c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_06632b7f37e2f5620136f3b4144a8cd66059eee7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/5fab812bbbff958c08c5610af2f8c64a1d2c638f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9e920fa6f154d08cbe99b31a2e0f2cce32aea67d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_3bad3dc3fc82a48d64c3985c888641d76640193e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c783de6c1058ae00e6ebfce288d0189cad60bdb">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3cd0e1311bfb155e43da7694fb302a08f1a64ba1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-7.0.1_726d728b2fdda5415692270a131da56aa6fd2b3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/49d04de3a764d985e6805098885265be5370dbf5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8ce47036bad6c3d6ad1d3ad26efc2e08d661fc6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Guest/.android/build-cache/570c83443ac0187afc0423f88dcf6533dd567b97/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f2298ce26f8a7318fc466fbe7ddc350a8605aa3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Shared/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/Guest/Desktop/androidWeek1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_a824dfa0c7ffd6ac5d03b65866973642ead8ca33/classes.dex" />
+    </item>
+
+</items>

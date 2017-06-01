@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doomcat.twilioapp.Activities.SignUpActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="260dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="37dp"
+        android:text="Create an account"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/userNameEditText2"
+        android:layout_width="348dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        tools:layout_editor_absoluteY="124dp"
+        tools:layout_editor_absoluteX="18dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/passwordConfirmEditText2"
+        android:layout_alignStart="@+id/passwordConfirmEditText2"
+        android:layout_marginTop="48dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText2"
+        android:layout_width="347dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteY="214dp"
+        tools:layout_editor_absoluteX="19dp"
+        android:layout_below="@+id/userNameEditText2"
+        android:layout_alignRight="@+id/userNameEditText2"
+        android:layout_alignEnd="@+id/userNameEditText2"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:id="@+id/passwordConfirmEditText2"
+        android:layout_width="348dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Confrim Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteY="298dp"
+        tools:layout_editor_absoluteX="18dp"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/passwordEditText2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="430dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_red_light"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>
