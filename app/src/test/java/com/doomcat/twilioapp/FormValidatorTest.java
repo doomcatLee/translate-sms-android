@@ -2,6 +2,7 @@ package com.doomcat.twilioapp;
 
 import android.os.Build;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
@@ -13,6 +14,8 @@ import com.doomcat.twilioapp.Activities.MainActivity;
 
 import org.junit.Before;
 import org.robolectric.Robolectric;
+
+import java.io.PrintStream;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
@@ -48,6 +51,14 @@ public class FormValidatorTest {
 //        String password = "";
 //        assertTrue(fv1.isEmpty(userName, password));
 //
+//    }
+
+//    @Test
+//    public static void translateText(String sourceText, PrintStream out) {
+//        Translate translate = createTranslateService();
+//        Translation translation = translate.translate(sourceText);
+//        out.printf("Source Text:\n\t%s\n", sourceText);
+//        out.printf("Translated Text:\n\t%s\n", translation.getTranslatedText());
 //    }
 
 }

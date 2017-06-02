@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.transition.Explode;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -15,9 +16,18 @@ import android.widget.Toast;
 
 import com.doomcat.twilioapp.Services.AppService;
 import com.doomcat.twilioapp.R;
+import com.doomcat.twilioapp.Services.TranslateService;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -30,14 +40,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Bind(R.id.logInButton)
     Button mLogInButton;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
         AppService service = new AppService();
         mSignUp.setOnClickListener(this);
         mLogInButton.setOnClickListener(this);
@@ -47,6 +56,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         TextView[] fonts = {mUserNameEditText, mPasswordEditText};
         service.setFonts(fonts,robotoFont);
+
     }
 
     @Override
