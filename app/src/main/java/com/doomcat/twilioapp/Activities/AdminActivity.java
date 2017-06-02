@@ -32,6 +32,10 @@ import android.widget.Toast;
 
 
 import com.doomcat.twilioapp.R;
+import com.doomcat.twilioapp.Services.TranslateService;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -43,6 +47,7 @@ public class AdminActivity extends Activity {
     private Button mSend;
     private OkHttpClient mClient = new OkHttpClient();
     private Context mContext;
+    private String translatedText;
 
 
     @Override
@@ -55,11 +60,35 @@ public class AdminActivity extends Activity {
         mSend = (Button) findViewById(R.id.btnSend);
         mContext = getApplicationContext();
 
+
         mSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String userInput = mBody.getText().toString();
+                TranslateService.translateMessage(userInput, new Callback(){
+                    @Override
+                    public void onFailure(Call call, IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        try {
+                            String jsonData = response.body().string();
+                            JSONObject jsonObject = new JSONObject(jsonData);
+                            translatedText = jsonObject.getString("translationText");
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        } catch (JSONException e){
+                            e.printStackTrace();
+                        }
+                    }
+                });
+
                 try {
-                    post("https://738402eb.ngrok.io/sms", new  Callback(){
+                    //So we wait for translatedText to be filled first
+                    Thread.sleep(700);
+                    post("https://92495faa.ngrok.io/sms", new  Callback(){
 
                         @Override
                         public void onFailure(Call call, IOException e) {
@@ -82,6 +111,8 @@ public class AdminActivity extends Activity {
                     });
                 } catch (IOException e) {
                     e.printStackTrace();
+                }catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         });
@@ -91,7 +122,7 @@ public class AdminActivity extends Activity {
     Call post(String url, Callback callback) throws IOException {
         RequestBody formBody = new FormBody.Builder()
                 .add("To", mTo.getText().toString())
-                .add("Body", mBody.getText().toString())
+                .add("Body", translatedText)
                 .build();
         Request request = new Request.Builder()
                 .url(url)
