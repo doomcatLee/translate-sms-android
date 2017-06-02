@@ -23,11 +23,11 @@ public class AdminActivityTest {
     private AdminActivity activity;
     private ListView mContentListView;
 
-    @Before
-    public void setup() {
-        activity = Robolectric.setupActivity(AdminActivity.class);
-        mContentListView = (ListView) activity.findViewById(R.id.contentListView);
-    }
+//    @Before
+//    public void setup() {
+//        activity = Robolectric.setupActivity(AdminActivity.class);
+//        mContentListView = (ListView) activity.findViewById(R.id.contentListView);
+//    }
 
     @Test
     public void CheckCountInListView() {

@@ -6,10 +6,6 @@ import android.widget.TextView;
 
 public class AppService {
 
-    public AppService(){
-
-    }
-
     public void setFonts(TextView[] views, Typeface font){
         for (TextView i: views){
             i.setTypeface(font);
