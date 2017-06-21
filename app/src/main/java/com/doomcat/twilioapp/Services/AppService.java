@@ -30,13 +30,11 @@ public class AppService {
 
 
     public static String formatMessage(String s){
-        String[] words = s.split(" ");
-        String output = "text=";
-        for (String i : words){
-            output += i;
-            output += " ";
-        }
-        return output;
+        String a = s.replaceAll(" ", "%20");
+        String output = "&text=";
+        String end = "&to=ko";
+
+        return output+a+end;
 
     }
 }

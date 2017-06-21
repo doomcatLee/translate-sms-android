@@ -32,6 +32,7 @@ import android.widget.Toast;
 
 
 import com.doomcat.twilioapp.R;
+import com.doomcat.twilioapp.Services.AppService;
 import com.doomcat.twilioapp.Services.TranslateService;
 
 import org.json.JSONException;
@@ -42,12 +43,14 @@ import butterknife.ButterKnife;
 
 public class AdminActivity extends Activity {
 
+    private static final String TAG = "AdminActivity";
     private EditText mTo;
     private EditText mBody;
     private Button mSend;
     private OkHttpClient mClient = new OkHttpClient();
     private Context mContext;
     private String translatedText;
+    TranslateService translateService = new TranslateService();
 
 
     @Override
@@ -64,8 +67,7 @@ public class AdminActivity extends Activity {
         mSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String userInput = mBody.getText().toString();
-                TranslateService.translateMessage(userInput, new Callback(){
+                translateService.translateMessage(mBody.getText().toString(), new Callback(){
                     @Override
                     public void onFailure(Call call, IOException e) {
                         e.printStackTrace();
@@ -75,20 +77,21 @@ public class AdminActivity extends Activity {
                     public void onResponse(Call call, Response response) throws IOException {
                         try {
                             String jsonData = response.body().string();
-                            JSONObject jsonObject = new JSONObject(jsonData);
-                            translatedText = jsonObject.getString("translationText");
+                            Log.d(TAG, "onResponse: DATA CHECK "+ jsonData);
+                            translatedText = jsonData.substring(68,jsonData.length() - 9);
+
                         } catch (IOException e) {
-                            e.printStackTrace();
-                        } catch (JSONException e){
                             e.printStackTrace();
                         }
                     }
                 });
 
+
+
                 try {
                     //So we wait for translatedText to be filled first
                     Thread.sleep(700);
-                    post("https://92495faa.ngrok.io/sms", new  Callback(){
+                    post("https://3e53b27e.ngrok.io/sms", new  Callback(){
 
                         @Override
                         public void onFailure(Call call, IOException e) {

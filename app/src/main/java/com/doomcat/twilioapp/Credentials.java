@@ -3,7 +3,7 @@ package com.doomcat.twilioapp;
 
 public class Credentials {
 
-    public static final String TRANSLATE_API_URL = "http://www.transltr.org/api/translate?";
+    public static final String TRANSLATE_API_URL = "https://api.microsofttranslator.com/v2/http.svc/Translate?";
     public static final String LANGUAGE_PARAMETER = "ko";
-    public static final String GOOGLE_TRANSLATE_API_KEY = "AIzaSyDaq4LSbHWCooSOL37uKM18Wi35pdWu7pI";
+    public static final String authToken = "Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzY29wZSI6Imh0dHBzOi8vYXBpLm1pY3Jvc29mdHRyYW5zbGF0b3IuY29tLyIsInN1YnNjcmlwdGlvbi1pZCI6IjQxMTk3YTFkZTUyNzQ4M2VhOTNjOTU4NTMyMDc2MjVhIiwicHJvZHVjdC1pZCI6IlRleHRUcmFuc2xhdG9yLkYwIiwiY29nbml0aXZlLXNlcnZpY2VzLWVuZHBvaW50IjoiaHR0cHM6Ly9hcGkuY29nbml0aXZlLm1pY3Jvc29mdC5jb20vaW50ZXJuYWwvdjEuMC8iLCJhenVyZS1yZXNvdXJjZS1pZCI6Ii9zdWJzY3JpcHRpb25zLzNlZmE1YmFlLTNhOGMtNGNlZC1hYmMyLWRhZmM4NDEyMTEyNy9yZXNvdXJjZUdyb3Vwcy9kb29tY2F0L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29nbml0aXZlU2VydmljZXMvYWNjb3VudHMvRG9raSIsImlzcyI6InVybjptcy5jb2duaXRpdmVzZXJ2aWNlcyIsImF1ZCI6InVybjptcy5taWNyb3NvZnR0cmFuc2xhdG9yIiwiZXhwIjoxNDk4MDg3NDAxfQ.sYYc7NFWIH6hWW1KQq4IgsxiNR48gELqFr0aJU9P_ak";
 }
