@@ -37,4 +37,13 @@ public class AppService {
         return output+a+end;
 
     }
+
+    public static String formatMessageToEnglish(String s){
+        String a = s.replaceAll(" ", "%20");
+        String output = "&text=";
+        String end = "&to=en-us";
+
+        return output+a+end;
+
+    }
 }

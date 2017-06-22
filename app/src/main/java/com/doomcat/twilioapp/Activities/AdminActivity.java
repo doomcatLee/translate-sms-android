@@ -1,6 +1,5 @@
 package com.doomcat.twilioapp.Activities;
 
-
 import android.content.Context;
 import android.util.Log;
 import android.view.View;
@@ -31,6 +30,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.doomcat.twilioapp.R;
 import com.doomcat.twilioapp.Services.AppService;
 import com.doomcat.twilioapp.Services.TranslateService;
@@ -41,6 +43,7 @@ import org.json.JSONObject;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+
 public class AdminActivity extends Activity {
 
     private static final String TAG = "AdminActivity";
@@ -50,6 +53,7 @@ public class AdminActivity extends Activity {
     private OkHttpClient mClient = new OkHttpClient();
     private Context mContext;
     private String translatedText;
+    private Button mToMessageButton;
     TranslateService translateService = new TranslateService();
 
 
@@ -58,16 +62,29 @@ public class AdminActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
 
+
         mTo = (EditText) findViewById(R.id.txtNumber);
         mBody = (EditText) findViewById(R.id.txtMessage);
         mSend = (Button) findViewById(R.id.btnSend);
+        mToMessageButton = (Button) findViewById(R.id.toMessages);
         mContext = getApplicationContext();
+
+
+        mToMessageButton.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminActivity.this, MessagesActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         mSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                translateService.translateMessage(mBody.getText().toString(), new Callback(){
+                translateService.translateMessage(mBody.getText().toString(), new Callback() {
                     @Override
                     public void onFailure(Call call, IOException e) {
                         e.printStackTrace();
@@ -77,21 +94,28 @@ public class AdminActivity extends Activity {
                     public void onResponse(Call call, Response response) throws IOException {
                         try {
                             String jsonData = response.body().string();
-                            Log.d(TAG, "onResponse: DATA CHECK "+ jsonData);
-                            translatedText = jsonData.substring(68,jsonData.length() - 9);
+                            Log.d(TAG, "onResponse: DATA CHECK " + jsonData);
+                            translatedText = jsonData.substring(68, jsonData.length() - 9);
 
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
                     }
+
+
+
                 });
+
+
+
+
 
 
 
                 try {
                     //So we wait for translatedText to be filled first
                     Thread.sleep(700);
-                    post("https://3e53b27e.ngrok.io/sms", new  Callback(){
+                    post("https://064d85aa.ngrok.io/sms", new  Callback(){
 
                         @Override
                         public void onFailure(Call call, IOException e) {
@@ -136,6 +160,7 @@ public class AdminActivity extends Activity {
         response.enqueue(callback);
         return response;
     }
+
 
 
 }
