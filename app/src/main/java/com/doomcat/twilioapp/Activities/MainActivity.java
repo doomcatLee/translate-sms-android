@@ -31,12 +31,15 @@ import okhttp3.Response;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
+    @Bind(R.id.userNameEditText1)
+    EditText mUserNameEditText;
 
-    @Bind(R.id.userNameEditText1) EditText mUserNameEditText;
+    @Bind(R.id.passwordEditText1)
+    EditText mPasswordEditText;
 
-    @Bind(R.id.passwordEditText1) EditText mPasswordEditText;
+    @Bind(R.id.signUpTextView)
+    TextView mSignUp;
 
-    @Bind(R.id.signUpTextView) TextView mSignUp;
     @Bind(R.id.logInButton)
     Button mLogInButton;
 
@@ -56,12 +59,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         TextView[] fonts = {mUserNameEditText, mPasswordEditText};
         service.setFonts(fonts,robotoFont);
-
     }
 
     @Override
     public void onClick(View v){
-
         AppService service = new AppService();
 
         if (v == mLogInButton){
