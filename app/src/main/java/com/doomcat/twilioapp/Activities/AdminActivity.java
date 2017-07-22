@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -44,7 +45,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
-public class AdminActivity extends Activity {
+public class AdminActivity extends Activity implements AdapterView.OnItemSelectedListener {
 
     private static final String TAG = "AdminActivity";
     private EditText mTo;
@@ -57,19 +58,32 @@ public class AdminActivity extends Activity {
     TranslateService translateService = new TranslateService();
 
 
+    public void onItemSelected(AdapterView<?> parent, View view,
+                               int pos, long id) {
+        // An item was selected. You can retrieve the selected item using
+        Object current = parent.getItemAtPosition(pos);
+        Log.d("test", current.toString());
+    }
+    public void onNothingSelected(AdapterView<?> parent) {
+        // Another interface callback
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
-
 
         mTo = (EditText) findViewById(R.id.txtNumber);
         mBody = (EditText) findViewById(R.id.txtMessage);
         mSend = (Button) findViewById(R.id.btnSend);
         mContext = getApplicationContext();
 
-
-
+        //Spinners
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.languages_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
         mSend.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -112,8 +112,8 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="309dp"
+        android:layout_height="43dp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         android:layout_marginStart="38dp"
