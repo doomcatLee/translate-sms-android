@@ -79,9 +79,5 @@ public class MainActivity extends Activity implements View.OnClickListener {
                         .makeSceneTransitionAnimation(this).toBundle());
             }
         }
-        if (v == mSignUp){
-            Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
-            startActivity(intent);
-        }
     }
 }
