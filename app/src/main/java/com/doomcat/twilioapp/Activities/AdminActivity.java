@@ -55,13 +55,13 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
     private Context mContext;
     private String translatedText;
     private Button mToMessageButton;
-    TranslateService translateService = new TranslateService();
-
+    private String mLanguage;
 
     public void onItemSelected(AdapterView<?> parent, View view,
                                int pos, long id) {
         // An item was selected. You can retrieve the selected item using
         Object current = parent.getItemAtPosition(pos);
+        mLanguage = current.toString();
         Log.d("test", current.toString());
     }
     public void onNothingSelected(AdapterView<?> parent) {
@@ -84,6 +84,7 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
                 R.array.languages_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
 
         mSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,7 +92,7 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
                 try {
                     //So we wait for translatedText to be filled first
                     Thread.sleep(700);
-                    post("http://translate-smsapp.fns3g6wcjv.us-west-2.elasticbeanstalk.com/sendSMS", new  Callback(){
+                    post("https://0283bb91.ngrok.io/sendSMS", new  Callback(){
 
                         @Override
                         public void onFailure(Call call, IOException e) {
@@ -126,6 +127,7 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
         RequestBody formBody = new FormBody.Builder()
                 .add("To", mTo.getText().toString())
                 .add("Body", mBody.getText().toString())
+                .add("Language", mLanguage)
                 .build();
         Request request = new Request.Builder()
                 .url(url)
