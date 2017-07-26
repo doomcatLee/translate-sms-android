@@ -20,21 +20,20 @@
         <activity
             android:name=".Activities.MainActivity"
             android:theme="@style/NoActionBar">
-        </activity>
-        <activity android:name=".Activities.SignUpActivity">
-            <meta-data
-                android:name=".android.support.PARENT_ACTIVITY"
-                android:value="com.doomcat.twilioapp.MainActivity"></meta-data>
-        </activity>
-        <activity android:name=".Activities.AdminActivity">
-            <meta-data
-                android:name=".android.support.PARENT_ACTIVITY"
-                android:value="com.doomcat.twilioapp.MainActivity"></meta-data>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activities.AdminActivity"
+            android:theme="@style/NoActionBar">
+            <meta-data
+                android:name=".android.support.PARENT_ACTIVITY"
+                android:value="com.doomcat.twilioapp.MainActivity"></meta-data>
+
         </activity>
     </application>
 

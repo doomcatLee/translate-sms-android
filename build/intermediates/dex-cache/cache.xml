@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="9b693ac45a9b1d82c38573ddfafb34130a4f6d43">
+        sha1="7b697e8bbf3675acd06cf03d71752e12524351a8">
         <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1a2ca056c8bb0e085e87eb97c8e3cb78cc609bc6/classes.dex" />
     </item>
     <item

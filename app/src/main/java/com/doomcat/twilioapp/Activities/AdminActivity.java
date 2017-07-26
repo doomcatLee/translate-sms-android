@@ -139,6 +139,4 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
         return response;
     }
 
-
-
 }
