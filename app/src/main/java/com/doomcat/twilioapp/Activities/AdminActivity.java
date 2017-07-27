@@ -92,7 +92,7 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
                 try {
                     //So we wait for translatedText to be filled first
                     Thread.sleep(700);
-                    post("https://0283bb91.ngrok.io/sendSMS", new  Callback(){
+                    post("http://node-senseiapp.tbztjmszwp.us-west-2.elasticbeanstalk.com/sendSMS", new  Callback(){
 
                         @Override
                         public void onFailure(Call call, IOException e) {
