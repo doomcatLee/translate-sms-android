@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Doki-SMS.iml" filepath="$PROJECT_DIR$/Doki-SMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/doki-sms.iml" filepath="$PROJECT_DIR$/doki-sms.iml" />
     </modules>
   </component>
 </project>
