@@ -87,9 +87,6 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
                                 public void run() {
                                     Log.d("test1", mTo.getText().toString());
                                     Log.d("test2", mBody.getText().toString());
-                                    mTo.setText("");
-                                    mBody.setText("");
-                                    Toast.makeText(getApplicationContext(),"SMS Sent!",Toast.LENGTH_SHORT).show();
                                 }
                             });
                         }
@@ -99,6 +96,11 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
                 }catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+
+                mTo.setText("");
+                mBody.setText("");
+                Toast.makeText(getApplicationContext(),"SMS Sent!",Toast.LENGTH_SHORT).show();
+
             }
         });
 

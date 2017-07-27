@@ -2,6 +2,87 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.1/2fd56467a018aafe6ec6a73ccba520be4a7e1565/asm-5.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2fd56467a018aafe6ec6a73ccba520be4a7e1565">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/asm-5.0.1_3a0fe5b51a50882319e23df385569d40d6c22880.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1_71e87e2da505aa8f2d65a93cd50ce0e705025ffa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.android/build-cache/7a7dcdf8666d4db6ff823a35890deb2776d94bb8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/classes_ef4f3024b700378fe8f9e0d3fad5cca9249f8124.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/5.0.1/7b7147a390a93a14d2edfdcf3f7b0e87a0939c3e/asm-commons-5.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7b7147a390a93a14d2edfdcf3f7b0e87a0939c3e">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/asm-commons-5.0.1_c01837180e90be8c1c5d44dc9196642794a3c218.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/okio-1.6.0_710a5d0c2feef0e245a3b57a1fd5bdfbb4986e59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0_d5c376886281221fb94cd703ecc5ce5fb6f94a38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/library-1.0.19_366d36b29c56b4a34372dd38afdf81b47b073d32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6_2075f62109a35ef4e3409e6f90d58ceb7ecd6111.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5.0.1/1b1e6e9d869acd704056d0a4223071a511c619e6/asm-tree-5.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1b1e6e9d869acd704056d0a4223071a511c619e6">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/asm-tree-5.0.1_abff09b82b91076dcc47bbc350a8788e3e78bb16.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/Users/doomcat/Doki-SMS/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
@@ -16,8 +97,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="2a290454afb0b0540d0eaefe9eedfd1299a8bcaa">
+        sha1="5c73cac1b5edb091cdf71df0bef0704ea9056641">
         <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1a2ca056c8bb0e085e87eb97c8e3cb78cc609bc6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/doomcat/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/Users/doomcat/Doki-SMS/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.9_aa5a372f6ffe8d6a49554622350c788db6deec83.jar" />
     </item>
 
 </items>
