@@ -1,10 +1,10 @@
 package com.doomcat.twilioapp.Activities;
 
-import android.content.Context;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -19,30 +19,12 @@ import okhttp3.Response;
 
 
 import android.app.Activity;
-import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 import com.doomcat.twilioapp.R;
-import com.doomcat.twilioapp.Services.AppService;
-import com.doomcat.twilioapp.Services.TranslateService;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import butterknife.Bind;
-import butterknife.ButterKnife;
 
 
 public class AdminActivity extends Activity implements AdapterView.OnItemSelectedListener {
@@ -52,9 +34,7 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
     private EditText mBody;
     private Button mSend;
     private OkHttpClient mClient = new OkHttpClient();
-    private Context mContext;
-    private String translatedText;
-    private Button mToMessageButton;
+    private ImageView mAlex;
     private String mLanguage;
 
     public void onItemSelected(AdapterView<?> parent, View view,
@@ -76,7 +56,8 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
         mTo = (EditText) findViewById(R.id.txtNumber);
         mBody = (EditText) findViewById(R.id.txtMessage);
         mSend = (Button) findViewById(R.id.btnSend);
-        mContext = getApplicationContext();
+
+
 
         //Spinners
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
@@ -120,6 +101,7 @@ public class AdminActivity extends Activity implements AdapterView.OnItemSelecte
                 }
             }
         });
+
 
     }
 
